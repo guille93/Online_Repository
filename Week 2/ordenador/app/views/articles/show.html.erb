@@ -1,0 +1,28 @@
+<h3>
+  <strong>Marca:</strong>
+  <%= @article.title %>
+</h3>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @article.text %>
+</p>
+<p>
+  <strong>Procesador:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+  <strong>RAM:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+    <%= link_to 'Edit', edit_article_path(@article)%> |
+    <%= link_to 'Back', articles_path%>
+</p>
