@@ -1,5 +1,6 @@
-<h1>Online Shop</h1>
-<h1>Listing articles</h1> 
+<h1><u>Online Shop</u></h1>
+<h1 style="color:blue">Listing Laptops:</h1> 
+<table>
 <% @articles.each do |article|%>
     <div><%= article.title %> 
 <%= link_to 'Show',  article_path(article)%>
@@ -7,7 +8,7 @@
         <%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
 <% end %>
-
+</table>
 <p>
     <%= link_to 'New article', new_article_path %>
 </p>

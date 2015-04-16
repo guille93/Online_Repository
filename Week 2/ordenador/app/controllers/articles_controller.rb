@@ -34,6 +34,6 @@ end
 
     private
     def article_params
-        params.require(:article).permit(:text, :text, :text, :text, :text)
+        params.require(:article).permit(:title, :text, :text, :text, :text)
     end
 end
