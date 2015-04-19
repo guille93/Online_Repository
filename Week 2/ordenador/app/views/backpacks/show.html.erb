@@ -1,0 +1,28 @@
+<h3>
+  <strong>Marca</strong>
+  <%= @backpack.title %>
+</h3>
+
+<p>
+  <strong>Color</strong>
+  <%= @backpack.Color %>
+</p>
+
+<p>
+  <strong>Capacidad</strong>
+  <%= @backpack.Capacidad %>
+</p>
+
+<p>
+  <strong>Bolsillos</strong>
+  <%= @backpack.Bolsillos %>
+</p>
+
+<p>
+  <strong>Resistente</strong>
+  <%= @backpack.Resistente %>
+</p>
+<p>
+<%= link_to 'Edit', edit_backpack_path(@backpack)%> |
+<%= link_to 'Back', backpacks_path %>
+</p>

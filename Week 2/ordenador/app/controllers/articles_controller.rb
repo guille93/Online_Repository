@@ -34,6 +34,6 @@ end
 
     private
     def article_params
-        params.require(:article).permit(:title, :Modelo, :Procesador, :RAM, :Precio)
+        params.require(:article).permit(:title,:Modelo, :Procesador, :RAM, :Precio)
     end
 end
