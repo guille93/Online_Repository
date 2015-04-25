@@ -1,23 +1,25 @@
 var Rover = {
   position: [0,0], 
-  direction: 'N'
+  direction: prompt("direccion?").toUpperCase()
 }
 
-function goForward(rover) {
-  switch(rover.direction) {
+switch(Rover.direction) {
     case 'N':
-      rover.position[0]++
+      Rover.position[1]++
       break;
     case 'E':
-      rover.position[1]++
+      Rover.position[0]++
       break;
     case 'S':
-      rover.position[0]--
+      Rover.position[1]--
       break;
     case 'W':
-      rover.position[1]--
+      Rover.position[0]--
       break;
   }
 
-goForward(myRover);
-}
+
+
+console.log(Rover.position);
+
+
