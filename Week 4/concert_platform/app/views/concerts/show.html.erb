@@ -1,0 +1,33 @@
+<h1 class="liked">
+  <b>Band Name:</b>
+  <%= @concert.band_name %>
+</h1>
+
+<p>
+  <strong>venue:</strong>
+  <%= @concert.venue %>
+</p>
+
+<p>
+  <strong>city:</strong>
+  <%= @concert.city %>
+</p>
+
+<p>
+  <strong>date:</strong>
+  <%= @concert.date %>
+</p>
+
+<p>
+  <strong>price:</strong>
+  <%= @concert.price %>
+</p>
+
+<p>
+  <strong>description:</strong>
+  <%= @concert.description %>
+</p>
+<button type='button' id='like-button' onclick='contarLikes()'> Like </button>
+
+<%= link_to 'Back', concerts_path %>
+

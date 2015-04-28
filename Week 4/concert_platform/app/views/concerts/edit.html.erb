@@ -1,0 +1,39 @@
+<h1>Editing concert</h1>
+
+<%= form_for :concert, url: concert_path(@concert), method: :patch do |f| %>
+  <p>
+    <%= f.label :band_name %><br>
+    <%= f.text_field :string %>
+  </p>
+
+  <p>
+    <%= f.label :venue %><br>
+    <%= f.text_area :text %>
+  </p>
+
+    <p>
+    <%= f.label :city %><br>
+    <%= f.text_area :text %>
+  </p>
+
+    <p>
+    <%= f.label :date %><br>
+    <%= f.text_area :date %>
+  </p>
+
+    <p>
+    <%= f.label :price %><br>
+    <%= f.text_area :float %>
+  </p>
+
+    <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', concerts_path%>
