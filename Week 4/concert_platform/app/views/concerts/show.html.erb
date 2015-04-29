@@ -1,33 +1,23 @@
-<h1 class="liked">
-  <b>Band Name:</b>
-  <%= @concert.band_name %>
-</h1>
-
-<p>
-  <strong>venue:</strong>
-  <%= @concert.venue %>
+<body>
+<div id='loDeDentro'>
+<h1><%= @concert.band_name %></h1>
+<p id='especial'>
+	<strong>Lugar:</strong>
+	<%= @concert.venue %>
+	<strong>&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbspCiudad:</strong>
+	<%= @concert.city %>
+	<strong>&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbspFecha:</strong>
+	<%= @concert.date %>
+	<strong>&nbsp&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp&nbspPrecio:</strong>
+	<%= @concert.price %> euros
+</p>
+<p id='descrip'>
+	<strong>Descripción:</strong><br/>
+	<%= @concert.description %>
 </p>
 
-<p>
-  <strong>city:</strong>
-  <%= @concert.city %>
-</p>
+<button type='button' id='like-button'>Me gusta</button>
 
-<p>
-  <strong>date:</strong>
-  <%= @concert.date %>
-</p>
-
-<p>
-  <strong>price:</strong>
-  <%= @concert.price %>
-</p>
-
-<p>
-  <strong>description:</strong>
-  <%= @concert.description %>
-</p>
-<button type='button' id='like-button' onclick='contarLikes()'> Like </button>
-
-<%= link_to 'Back', concerts_path %>
-
+<span id='back'><%= link_to 'Back', concerts_path %></span>
+</div>
+</body>
