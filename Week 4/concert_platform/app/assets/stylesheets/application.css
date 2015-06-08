@@ -1,17 +1,32 @@
 #especial {
-	background: -webkit-linear-gradient(#8CBFDD, #FFF);
+	background: -webkit-linear-gradient(left, #8CBFDD, #FFF);
 	padding: 0px;
 	color: #190C24;
-	text-align: center;
-	font-size: 120%;
+	font-size: 130%;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 3px;
 	border-radius: 10px;
 	border: solid black;
 	box-shadow: 12px 12px 13px #974935;
 }
+
+
+#enlaces {
+	background: -webkit-linear-gradient(#8CBFAD, #FFA);
+	padding: 0px;
+	color: #190C24;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	height: 180%;
+	border-radius: 101px;
+	border: solid black;
+	box-shadow: 12px 12px 13px #974935;
+}
+
 
 #descrip {
 	background: -webkit-linear-gradient(#F0F2C2, #D5DA47);
@@ -27,7 +42,7 @@
 }
 
 #loDeDentro {
-	background: -webkit-linear-gradient(#266F4F, #DF6A4D);
+	background: -webkit-linear-gradient(top right, #266F4F, #EF8065);
 	border: 3px solid black;
 	padding-bottom: 24px;
 }
@@ -53,11 +68,12 @@ a {
 }
 
 a:hover {
-	color: #000;
+	color: #974935;
+	font-size: 110%;
 }
 
 a:visited {
-	color: #000;
+	color: none;
 }
 
 #like-button, #back, #newC {

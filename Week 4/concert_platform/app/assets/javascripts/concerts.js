@@ -1,7 +1,7 @@
-window.onload = function(){
-   var contador = 0;
-   document.getElementById("like-button").onclick = function(){
-       contador++;
-       alert(contador);
-   }
+var likes = [i];
+var i = 0;
+
+function cuentaLikes() {
+	likes.push(i++);
+	return document.getElementById('result').innerHTML = likes[i];
 }
